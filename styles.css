@@ -15,25 +15,42 @@ body {
 
 a {
   text-decoration: none;
-  color: #089cff;
+  color: #005aff;
 }
 a:hover {
   transition: 0.3s;
-  color: #48b6ff;
+  color: #5b03ff;
   text-decoration: underline;
 }
 
 /* Section Styles */
+.ben-img-unsw {
+  border: 1px solid #222;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.main-nav {
+.ben-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+figcaption {
+  padding-top: 9px;
+  text-align: center;
+}
+nav {
   width: 100%;
-  background: orange;
+  background: #ffa500;
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
 }
-.nav {
+.main-nav-list {
   display: flex;
   justify-content: space-around;
   font-weight: 700;
@@ -41,14 +58,15 @@ a:hover {
   margin: 0 auto;
   padding: 0;
 }
-.nav .name {
+.main-nav-list .name {
   display: none;
+  color: white;
 }
 
-.nav li {
+.main-nav-list li {
   padding: 5px 10px 10px 10px;
 }
-.nav a {
+.main-nav-list a {
   transition: all .5s;
 }
 
@@ -58,7 +76,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/sunrise.JPG') no-repeat top center ;
+  background: url('images/sunrise2.JPG') no-repeat center center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -71,15 +89,17 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border: 4px solid white;
+  transition: all .7s;
+
 }
 header .profile-image:hover {
-  transform: scale(1.3) rotate(360deg);
+  transform: scale(1.4);
 }
+
 .tag {
   background-color: #efefef;
-  color: black;
+  color: #222;
   padding: 10px;
   border-radius: 5px;
   display: table;
@@ -89,18 +109,18 @@ header .profile-image:hover {
   background-color: #222;
   color: white;
 }
-.card {
+section {
   margin: auto;
   padding: 20px 50px 30px;
-  max-width: 600px;
+  max-width: 700px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all 0.9s;
 }
-.card:hover {
-  border-color: #0399ff;
+section:hover {
+  border-color: orange;
 }
 
 ul.skills {
@@ -118,7 +138,7 @@ ul.skills {
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #005aff;
 }
 
 footer {
@@ -183,11 +203,11 @@ a.social:hover {
     min-height: 450px;
   }
 
-  .nav {
+  .main-nav-list {
     max-width: 1200px;
   }
 
-  .nav .name {
+  .main-nav-list .name {
     display: block;
     margin-right: auto;
     color: white;
@@ -210,23 +230,29 @@ a.social:hover {
 }
 
 h3 {
-    color: black;
+    color: #222;
     letter-spacing: 3px;  
 }
 
 .card-title {
+    color:#222;
     text-align: center;
     border: 2px outset #0399ff;
     border-radius: 4px;
     margin-top: 10px;
 }
 
+.card-title:hover {
+  transition: 0.3s;
+  color: #5b03ff;
+}
 
-
-
-
-
-
-
-
-
+.card-title-2 {
+  text-align: center;
+  letter-spacing: 2px; 
+}
+ 
+.card-title-3 {
+  text-align: center;
+  letter-spacing: 5px; 
+}

@@ -10,17 +10,15 @@
 </head>
 <body>
 
-	<div class="main-nav">
-		<nav>
-			<ul class="nav">
-				<li class="name">Ben Stals</li>
-				<li><a href="#">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="experiences.html">Experience</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</div>
+	<nav>
+		<ul class="main-nav-list">
+			<li class="name">Ben Stals</li>
+			<li><a href="#">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="experiences.html">Experience</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
 	<header>
 		<img src="images/ben_profile_cropped.jpg" alt="Ben's Profile Picture" class="profile-image" title="Me!" >
@@ -29,26 +27,26 @@
 	</header>
 
 	<main class="main">
+		
+		<section>
+			<a href="about.html"><h2 class="card-title">About Me</h2></a>
+			<p>Some info about me, my studies and things I like</p>
+		</section>
 
-		<div class="card">
-			<h2 class="card-title">About Me</h2>
-			<p>Some info about me, my studies and things I like &rArr; <button class="button about"><a href="about.html">About Me</a></button></p>
-		</div>
+		<section>
+			<a href="experiences.html"><h2 class="card-title">Experience</h2></a>
+			<p>My experiences and skills</p>
+		</section>
 
-		<div class="card">
-			<h2 class="card-title">Experience</h2>
-			<p>My experiences and skills &rArr; <button class="button experience"><a href="experiences.html">Experience</a></button></p>
-		</div>
-
-		<div class="card" id="contact">
-			<h2 class="card-title">Contact</h2>
+		<section id="contact">
+			<a href="#contact"><h2 class="card-title">Contact</h2></a>
 			<p id="contact">Feel free to email me or check out my Github or LinkedIn!</p>
 			<address>
 				Email: <a href="mailto:bstals99@gmail.com?subject=Your Website!" target="_blank">bstals99@gmail.com</a><br>
 				Github:  <a href="https://github.com/bstals" target="_blank">github.com/bstals</a><br>
 				LinkedIn: <a href="https://www.linkedin.com/in/ben-stals/" target="_blank">linkedin.com/in/ben-stals</a> 
 			</address>
-		</div>	
+		</section>
 
 	</main>
 	
